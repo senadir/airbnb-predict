@@ -56,7 +56,7 @@ export default function Home() {
       body: JSON.stringify(form),
     })
       .then((res) => res.json())
-      .then((data) => console.log(data));
+      .then((data) => setPredictedPrice(data.predicted_price));
   };
 
   return (
